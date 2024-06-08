@@ -77,6 +77,7 @@ alias vim='nvim'
 alias c='clear'
 alias tree='tree -C'
 alias lsd='eza --tree --level=3  --icons'
+alias air='~/.air'
 # Shell integrations
 eval "$(zoxide init --cmd cd zsh)"
 

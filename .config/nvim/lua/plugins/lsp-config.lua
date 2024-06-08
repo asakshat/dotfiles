@@ -15,9 +15,35 @@ return {
     },
     {
         "neovim/nvim-lspconfig",
+        lazy = false,
         config = function()
+
             local lspconfig = require('lspconfig')
-            lspconfig.lua_ls.setup({})
+            lspconfig.tailwindcss.setup({
+                capabilities = capabilities
+              })
+              lspconfig.tsserver.setup({
+                capabilities = capabilities
+              })
+             
+              lspconfig.html.setup({
+                capabilities = capabilities
+              })
+              lspconfig.lua_ls.setup({
+                capabilities = capabilities
+              })
+              lspconfig.docker_compose_language_service.setup({
+                capabilities = capabilities
+              })
+              lspconfig.dockerls.setup({
+                capabilities = capabilities
+              })
+              lspconfig.gopls.setup({
+                capabilities = capabilities
+              })
+              lspconfig.bashls.setup({
+                capabilities = capabilities
+              })
         end
     }
 }

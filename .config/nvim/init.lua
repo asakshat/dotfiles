@@ -13,4 +13,4 @@ vim.opt.rtp:prepend(lazypath)
 vim.opt.clipboard:append { 'unnamedplus' }
 require("nvim-options")
 require("lazy").setup("plugins")
-vim.cmd[[colorscheme tokyonight-night]]
+
